@@ -1,0 +1,9 @@
+<div class="customers view">
+    <ul id="messages" data-ng-model="messages"></ul>
+    <span id="notifyUser" data-ng-model="notifyUser"></span>
+    <form id="form" action="" ng-submit="submitfunction();">
+        <input type="hidden" id="user" value="" data-ng-model="user" />
+        <input id="m" autocomplete="off" ng-onkeyup="notifyTyping();" data-ng-model="m" placeholder="Type yor message here.." />
+        <input type="submit" id="button" value="Send" />
+    </form>
+</div>
