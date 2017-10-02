@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE html>
 <html data-ng-app="customersApp">
+
 <head>
     <title>Customer Manager</title>
     <link href="public/css/bootstrap.min.css" rel="stylesheet" />
     <link href="public/css/bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="public/css/customerManagementStyles.css" rel="stylesheet" />
 </head>
+
 <body>
 
     <div class="navbar navbar-fixed-top">
@@ -17,6 +19,7 @@
                 <ul class="nav nav-pills" data-ng-controller="NavbarController">
                     <li data-ng-class="{'active':getClass('/customers')}"><a href="#/customers">Customers</a></li>
                     <li data-ng-class="{'active':getClass('/orders')}"><a href="#/orders">Orders</a></li>
+                    <li data-ng-class="{'active':getClass('/chat')}"><a href="#/chat">Chat</a></li>
                 </ul>
             </div>
         </div>
@@ -33,9 +36,9 @@
                 <div class="container">
                     <footer>
                         <div class="row">
-                                Some footers 1
+                            Some footers 1
                         </div>
-                   </footer>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -61,4 +64,5 @@
     <script src="app/services/customersService.js"></script>
     <script src="app/directives/animatedView.js"></script>
 </body>
+
 </html>
