@@ -10,10 +10,11 @@ app.controller('CustomersController', function ($scope, customersService) {
     }
 
     $scope.insertCustomer = function () {
-        
+        customersService.insertCustomer($scope.newCustomer.firstName,
+            $scope.newCustomer.lastName, $scope.newCustomer.city);
     };
 
     $scope.deleteCustomer = function (id) {
-       
+        customersService.deleteCustomer(id);
     };
 });

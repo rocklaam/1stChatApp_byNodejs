@@ -20,7 +20,7 @@
                 <input data-ng-model="newCustomer.city" type="text" placeholder="Customer City">
                 <button id="submitCustomer" class="btn btn-primary" type="button" 
                     data-ng-disabled="!newCustomer.firstName || !newCustomer.lastName || !newCustomer.city" 
-                    data-ng-click="">Add Customer</button>
+                    data-ng-click="insertCustomer()">Add Customer</button>
             </div>
         </div>
         <br /><br />
