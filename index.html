@@ -21,6 +21,7 @@
                     <li data-ng-class="{'active':getClass('/customers')}"><a href="#/customers">Customers</a></li>
                     <li data-ng-class="{'active':getClass('/orders')}"><a href="#/orders">Orders</a></li>
                     <li data-ng-class="{'active':getClass('/chat')}"><a href="#/chat">Chat</a></li>
+                    <li data-ng-class="{'active':getClass('/to-do')}"><a href="#/to-do">To Do</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +53,7 @@
 
     <!-- UI Libs -->
     <script src="public/js/bootstrap.js"></script>
-    <script src="public/js/socket.io-1.2.0.js"></script>
+    <!-- <script src="public/js/socket.io-1.2.0.js"></script> -->
     <script src="public/js/chat.js"></script>
 
     <!-- App libs -->
@@ -62,9 +63,12 @@
     <script src="app/controllers/navbar.controllers.js"></script>
     <script src="app/controllers/orders.controllers.js"></script>
     <script src="app/controllers/order-child.controllers.js"></script>
+    <script src="app/controllers/todo.controllers.js"></script>
 
     <script src="app/services/customersService.js"></script>
     <script src="app/directives/animatedView.js"></script>
+    <script src="app/directives/myTodo.js"></script>
+
 </body>
 
 </html>

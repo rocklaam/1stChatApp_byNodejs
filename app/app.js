@@ -23,8 +23,13 @@ app.config(function ($routeProvider) {
         //Define a route that has a route parameter in it (:chat)
         .when('/chat',
         {
-            controller: 'OrdersController',
+            controller: 'OrdersController', //ChatController
             templateUrl: '/app/views/chat.html'
+        })
+        .when('/to-do',
+        {
+            controller: 'TodoController',
+            templateUrl: '/app/views/todo.html'
         })
         .otherwise({ redirectTo: '/customers' });
 });
