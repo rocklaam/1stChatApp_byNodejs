@@ -12,7 +12,6 @@ app.directive('myTodo', function () {
                 newtoDo.name = $scope.name;
                 newtoDo.completed = false;
                 $scope.list.push(newtoDo);
-                console.log($scope.list);
             };
         }
     };
